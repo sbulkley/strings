@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>10DEMSTR</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+    </head>   
+    <body>
+        <div class="shape dimension" id="dim1"></div>
+        <div class="shape dot" id="dot1s"></div>
+        <div class="shape dot" id="dot1e"></div>
+        <div class="shape dimension" id="dim2"></div>
+        <div class="shape dot" id="dot2e"></div>
+                
+        <div class="shape dimension" id="dim4"></div>
+        <div class="shape dot" id="dot4s"></div>
+        <div class="shape dot" id="dot4e"></div>
+        <div class="shape dimension" id="dim5"></div>
+        <div class="shape dot" id="dot5e"></div>
+        
+        <div class="shape dot" id="dot3"></div>
+        
+        <div class="shape dimension" id="dim7"></div>
+        <div class="shape dot" id="dot7s"></div>
+        <div class="shape dot" id="dot7e"></div>
+        <div class="shape dimension" id="dim8"></div>
+        <div class="shape dot" id="dot8e"></div>
+        
+        <div class="shape dot" id="dot6"></div>
+        
+        <div id="sections">
+            <div class="play" id="d1">First</div>
+            <div class="play" id="d2">Second</div>
+            <div class="play" id="d3">Third</div>
+            <div class="play" id="d4">Fourth</div>
+            <div class="play" id="d5">Fifth</div>
+            <div class="play" id="d6">Sixth</div>
+            <div class="play" id="d7">Seventh</div>
+            <div class="play" id="d8">Eighth</div>
+            <div class="play" id="d9">Ninth</div>
+            <div class="play" id="d10">Tenth</div>
+        </div>
+    </body>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    
+    <script>
+        
+        
+        $(document).ready(function() {   
+            
+            d1();
+            d2();
+            //d3();
+            //d4();
+            //d5();
+            //d6();
+            //d7();
+            //d8();
+            
+            
+            $("#d1").click(function() {
+                d1();
+                $("#d2").click(function() {
+                    d2();
+                    $("#d3").click(function() {
+                        d3();
+                    });
+                });
+            });
+            
+            $("#d4").click(function() {
+                d4();
+                $("#d5").click(function() {
+                    d5();
+                    $("#d6").click(function() {
+                        d6();
+                    });
+                });
+            });
+            
+            $("#d7").click(function() {
+                d7();
+                $("#d8").click(function() {
+                    d8();
+                });
+            });
+        });
+    
+    </script>
+    
+</html>

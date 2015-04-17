@@ -1,0 +1,60 @@
+//output:style.css, compress:true
+
+@blue: #879fde;
+@green: spin(@blue, +240);
+@red: spin(@blue, +120);
+
+.shape {
+    position: absolute;
+}
+
+.dimension {
+    height: 10px;
+    width: 10px;
+    background-color: #a4e5dd;
+}
+
+.dot {
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+#dim1, #dim2 {
+    background-color: @blue;
+}
+
+#dot1s, #dot1e, #dot2e {
+    border: 2px solid @blue;
+}
+
+#dim4, #dim5 {
+    background-color: @green;
+}
+
+#dot3, #dot4s, #dot4e, #dot5e {
+    border: 2px solid @green;
+}
+
+#dim7, #dim8 {
+    background-color: @red;
+}
+
+#dot6, #dot7s, #dot7e, #dot8e {
+    border: 2px solid @red;
+}
+
+#sections {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    font-family: 'Codystar', cursive;
+    font-size: 2em;
+}
+
+.play {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
